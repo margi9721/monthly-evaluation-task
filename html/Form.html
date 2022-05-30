@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+  <link rel="stylesheet" href="../css/formStylesheet.css">
+  <script src="../javascript/jquery.min.js"></script>
+  <script src="../javascript/jquery.validate.min.js"></script>
+  <script src="../javascript/customvalidations.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.3.4/jquery.inputmask.bundle.min.js"></script>  
+  <script type="text/javascript" src="../javascript/formvalidation.js"></script>
+  <script type="text/javascript" src="../javascript/display.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <form id="productForm" action="../html/displayData.html" method="get" target="_blank" >
+      <div class="header">
+        <img class="icon-img" src="../images/WhatsApp Image 2022-05-24 at 11.21.00 AM.jpeg">
+        <h1>Product Order Form</h1>
+      </div>
+      
+      <hr class="hr1">
+     <div class="sub-head">
+      <h2>Products</h2><br>
+      <input type="search" placeholder="Search"  class="search-field" />
+      <button class="search-button">
+        <img src="../images/search.png">
+      </button></div><br>
+      <div class="block">
+        <div class="cb1"><input type="checkbox" id="check1" name="productcheck" class="productselect" value="30.00"></div>
+        <label for="check1">
+        <div>
+          <img class="img-product" src="../images/white-tshirt.jpg">
+          
+        </div>
+      
+          <div class="product1">
+            <div class="price"><h3>White T-Shirt</h3><p><b>$30.00</b></p></div>
+            <div><p class="product-text">Simple Design. 100% Organic Cotton.</p></div>
+            <div class="size-select">
+              <p>Quantity</p>&nbsp;
+              <select name="quantity" id="quantity" class="quantity">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>&nbsp;&nbsp;
+             <p>Size</p>&nbsp;   
+              <select name="size" id="size" class="size">
+                <option value="XS">XS</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+                <option value="XLL">XXL</option>
+                <option value="XLLL">XXXL</option>
+              </select>
+            </div>   
+          </div>
+        </label>       
+      </div><br><hr><br>
+
+      <div class="block">
+        <div class="cb1"><input type="checkbox" id="check2" name="productcheck" class="productselect" value="100.00"></div>
+        <label for="check2">
+        <div><img class="img-product" src="../images/sweatshirt.jpg"></div>
+      
+          <div class="product1">
+            <div class="price"><h3>Sweatshirt</h3><p><b>$100.00</b></p></div>
+            <div><p class="product-text">Smooth Rainbow Colours</p></div>
+            <div class="size-select">
+              <p>Quantity</p>&nbsp;
+              <select name="quantity" id="quantity" class="quantity">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>&nbsp;&nbsp;
+              <p>Color</p>&nbsp;
+              <select name="color" id="color" class="colours">
+                <option value="Red">Red</option>
+                <option value="Blue">Blue</option>
+                <option value="Green">Green</option>
+                <option value="Black">Black</option>
+                <option value="Magenta">Magenta</option>
+              </select>&nbsp;&nbsp;
+             <p>Size</p>&nbsp;   
+              <select name="size" id="size" class="size">
+                <option value="XS">XS</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+                <option value="XLL">XXL</option>
+                <option value="XLLL">XXXL</option>
+              </select>
+            </div>   
+          </div>
+        </label>       
+      </div><br><hr><br>
+
+      <div class="block">
+        <div class="cb1"><input type="checkbox" id="check3" name="productcheck" class="productselect" value="125.00"></div>
+        <label for="check3">
+        <div><img class="img-product" src="../images/shoes.jpg"></div>
+      
+          <div class="product1">
+            <div class="price"><h3>Shoes</h3><p><b>$125.00</b></p></div>
+            <div><p class="product-text">Fabric shoes with Gray Squares</p></div>
+            <div class="size-select">
+              <p>Quantity</p>&nbsp;
+              <select name="quantity" id="quantity" class="quantity">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>&nbsp;&nbsp;
+             <p>Size</p>&nbsp;   
+              <select name="size" id="size" class="size">
+                <option value="8">8</option>
+                <option value="8.5">8.5</option>
+                <option value="9">9</option>
+                <option value="9.5">9.5</option>
+                <option value="10">10.5</option>
+                <option value="11">11.5</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+              </select>
+            </div>   
+          </div>
+        </label>      
+      </div><br><hr><br><br>
+      <div class="price-total">
+        <div><p class="total-text"><b>Total: $<span id="total">0.00</span></b></span></p></div>
+      </div>
+      
+      <hr><br>
+      <label>Credit Card</label><br>
+      <table>
+        <tr>
+          <td><input type="text" id="creditfname" name="creditfname" placeholder="Firstname"></td>
+          <td><input type="text" id="creditlname" name="creditlname" placeholder="Lastname"></td>
+        </tr>
+
+      </table><br><br>
+      <table class="table1">
+        <tr>
+          <td>Fullname</td>
+          <td><input type="text" id="fname" name="firstname"></td>
+          <td><input type="text" id="lname" name="lastname"></td>
+        </tr><br>
+        <tr>
+          <td></td>
+          <td><label>Firstname</label></td>
+          <td><label>Lastname</label></td>
+
+        </tr>
+      </table><br><br>
+      <table class="table2">
+        <tr>
+          <td class="td-label">Email</td>
+          <td><input class="email-txt" type="email" placeholder="ex:email@yahoo.com" name="email" id="email"></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>example@example.com</td>
+        </tr>
+      </table><br><br>
+      <table class="table2">
+        <tr>
+          <td class="td-label">Contact number</td>
+          <td><input type="tel" id="phone" name="phone" placeholder="(000) 000-0000" class="phone"></td>
+        </tr>
+      </table><br><br>
+      <table class="table2">
+        <tr>
+          <td class="td-label">Billing Address</td>
+          <td><input type="text" id="street1" name="street1"></td>
+        </tr>
+        <tr>
+          <td class="td-label"></td>
+          <td><label for="street1">Street Address</label><br>
+        </tr>
+      </table><br>
+
+      <table class="table2">
+        <tr>
+          <td class="td-label"></td>
+          <td><input type="text" id="street2" name="street2"></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><label for="street2">Street Address Line2</label><br>
+        </tr>
+      </table><br>
+      <table class="table1">
+        <tr>
+          <td class="td-label"></td>
+          <td><input type="text" id="city" name="city"></td>
+          <td><input type="text" id="state" name="state"></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><label>City</label></td>
+          <td><label>State/Province</label></td>
+        </tr>
+      </table><br>
+      <table class="table1">
+        <tr>
+          <td class="td-label"></td>
+          <td><input type="text" id="pin" name="pincode"></td>
+          <td>
+            <select name="country" id="country" class="">
+              <option value="">Please select</option>
+              <option value="India">India</option>
+              <option value="Australia">Australia</option>
+              <option value="USA">USA</option>
+              <option value="Canada">Canada</option>
+              <option value="Pakistan">Pakistan</option>
+              <option value="Germany">Germany</option>
+              <option value="Italy">Italy</option>
+              <option value="Malaysia">Malaysia</option>
+              <option value="China">China</option>
+              <option value="Bangladesh">Bangladesh</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><label>Postal/Zipcode</label></td>
+          <td><label>Country</label></td>
+        </tr>
+      </table><br><br>
+      <div class="gift-select">
+        <table class="table1">
+          <tr>
+            <td class="td-label">Send Gift</td>
+            <td><input type="radio" id="yes" name="gift" value="yes">
+              <label for="yes">Yes</label>
+            </td>
+            <td><input type="radio" id="no" name="gift" value="no">
+              <label for="no">No</label>
+            </td>
+          </tr>
+        </table><br><br>
+      </div>
+      
+      <div id="mydiv" class="optional-div">
+        <table class="table1">
+          <tr>
+            <td>Fullname</td>
+            <td><input type="text" id="giftfname" name="giftfirstname"></td>
+            <td><input type="text" id="giftlname" name="giftlastname"></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><label>Firstname</label></td>
+            <td><label>Lastname</label></td>
+  
+          </tr>
+        </table><br><br>
+        <table class="table2">
+          <tr>
+            <td class="td-label">Contact number</td>
+            <td><input type="tel" id="contact" name="giftcontact" placeholder="(000)-000-0000" class="phone"></td>
+          </tr>
+        </table><br><br>
+        <table class="table1">
+          <tr>
+            <td class="td-label"><label for="check">Same as Billing Address?</label></td>
+            <td><input class="checkbox" type="checkbox" id="same" name="addcheck" value="check"></td>
+            <td></td>
+          </tr>
+        </table><br>
+        <table>
+          <tr>
+  
+          </tr>
+        </table>
+        <table class="table2">
+          <tr>
+            <td class="td-label">Shipping Address</td>
+            <td><input type="text" id="add1" name="giftstreet1"></td>
+          </tr>
+          <tr>
+            <td class="td-label"></td>
+            <td><label for="street1">Street Address</label><br>
+          </tr>
+        </table><br>
+        <table class="table2">
+          <tr>
+            <td class="td-label"></td>
+            <td><input class="street2" type="text" id="add2" name="giftstreet2"></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><label for="street2">Street Address Line2</label><br></td>
+          </tr>
+        </table><br>
+        <table class="table1">
+          <tr>
+            <td class="td-label"></td>
+            <td><input type="text" id="giftcity" name="giftcity"></td>
+            <td><input type="text" id="giftstate" name="giftstate"></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><label>City</label></td>
+            <td><label>State/Province</label></td>
+          </tr>
+        </table><br>
+        <table class="table1">
+          <tr>
+            <td class="td-label"></td>
+            <td><input type="text" id="pcode" name="giftpincode"></td>
+            <td>
+              <select name="giftcountry" id="giftcountry" class="">
+                <option value="">Please select</option>
+                <option value="India">India</option>
+                <option value="Australia">Australia</option>
+                <option value="USA">USA</option>
+                <option value="Canada">Canada</option>
+                <option value="Pakistan">Pakistan</option>
+                <option value="Germany">Germany</option>
+                <option value="Italy">Italy</option>
+                <option value="Malaysia">Malaysia</option>
+                <option value="China">China</option>
+                <option value="Bangladesh">Bangladesh</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><label>Postal/Zipcode</label></td>
+            <td><label>Country</label></td>
+          </tr>
+        </table><br><br>
+
+      </div>
+      
+      <table class="table2">
+        <tr>
+          <td class="td-label">Address Requests</td>
+          <td><textarea rows="9" cols="65" id="addrequest" name="requests"></textarea></td>
+        </tr>
+      </table><br><br>
+      <hr>
+      <button type="submit" class="orderbtn" value="order" id="orderBtn" onclick="sendData()">Order Now</button>
+    </form>
+  </div>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      formValidation.init();
+    })
+  </script>
+</body>
+</html>
